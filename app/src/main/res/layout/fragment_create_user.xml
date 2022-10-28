@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CreateUserLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyCard">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/round_outline"
+        android:backgroundTint="@color/blackCard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/firstNameLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/editTextFirstName"
+            android:text="@string/first_name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editTextFirstName"
+            app:layout_constraintStart_toStartOf="@+id/editTextFirstName" />
+
+        <TextView
+            android:id="@+id/errorFirstNameTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/error_required"
+            android:textAlignment="textEnd"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/editTextFirstName"
+            app:layout_constraintEnd_toEndOf="@+id/editTextFirstName"
+            app:layout_constraintStart_toEndOf="@+id/firstNameLbl" />
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="60dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/lastNameLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/editTextLastName"
+            android:text="@string/last_name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editTextLastName"
+            app:layout_constraintStart_toStartOf="@+id/editTextLastName" />
+
+        <TextView
+            android:id="@+id/errorLastNameTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/error_required"
+            android:textAlignment="textEnd"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/editTextLastName"
+            app:layout_constraintEnd_toEndOf="@+id/editTextLastName"
+            app:layout_constraintStart_toEndOf="@+id/lastNameLbl" />
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/editTextFirstName"
+            app:layout_constraintStart_toStartOf="@+id/editTextFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextFirstName"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/middleNameLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/editTextMiddleName"
+            android:text="@string/middle_name"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editTextMiddleName"
+            app:layout_constraintStart_toStartOf="@+id/editTextMiddleName" />
+
+        <TextView
+            android:id="@+id/errorMiddleNameTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/error_required"
+            android:textAlignment="textEnd"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/editTextMiddleName"
+            app:layout_constraintEnd_toEndOf="@+id/editTextMiddleName"
+            app:layout_constraintStart_toEndOf="@+id/middleNameLbl" />
+
+        <EditText
+            android:id="@+id/editTextMiddleName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/editTextLastName"
+            app:layout_constraintStart_toStartOf="@+id/editTextLastName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLastName"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/createPhoneLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/editTextPhone2"
+            android:text="@string/phone"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editTextPhone2"
+            app:layout_constraintStart_toStartOf="@+id/editTextPhone2" />
+
+        <TextView
+            android:id="@+id/errorPhoneTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/error_required"
+            android:textAlignment="textEnd"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/editTextPhone2"
+            app:layout_constraintEnd_toEndOf="@+id/editTextPhone2"
+            app:layout_constraintStart_toEndOf="@+id/createPhoneLbl" />
+
+        <EditText
+            android:id="@+id/editTextPhone2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/editTextMiddleName"
+            app:layout_constraintStart_toStartOf="@+id/editTextMiddleName"
+            app:layout_constraintTop_toBottomOf="@+id/editTextMiddleName"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/passwordLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/editTextTextPassword"
+            android:text="@string/password"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword" />
+
+        <TextView
+            android:id="@+id/errorPasswordTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/error_required"
+            android:textAlignment="textEnd"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+            app:layout_constraintStart_toEndOf="@+id/passwordLbl" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/editTextPhone2"
+            app:layout_constraintStart_toStartOf="@+id/editTextPhone2"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone2"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/CreateUserBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/gold"
+            android:fontFamily="@font/barlow"
+            android:text="@string/registration_submit"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/barlow"
+            android:text="@string/registration_title"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="93dp"
+            android:layout_height="124dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_logo_g_txt" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

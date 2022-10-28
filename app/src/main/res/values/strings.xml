@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Queen</string>
+    <string name="login_app">Войти</string>
+    <string name="reqistration_app">Зарегистрироваться</string>
+    <string name="phone">Телефон</string>
+    <string name="password">Пароль</string>
+    <string name="first_name">Имя</string>
+    <string name="last_name">Фамилия</string>
+    <string name="middle_name">Отчество</string>
+    <string name="registration_title">Создай себе профиль и записывайся на бровки</string>
+    <string name="registration_submit">Зарегистрировать</string>
+    <string name="back">Назад</string>
+    <string name="error_login">Пользователь не найден</string>
+    <string name="error_password">Не правильный пароль</string>
+    <string name="error_required">Тут надо что-то вписать</string>
+    <string name="make_order">Записаться</string>
+</resources>
