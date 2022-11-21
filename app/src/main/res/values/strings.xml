@@ -2,6 +2,7 @@
     <string name="app_name">Queen</string>
     <string name="login_app">Войти</string>
     <string name="reqistration_app">Зарегистрироваться</string>
+    <string name="foggot_password">Забыли пароль?</string>
     <string name="phone">Телефон</string>
     <string name="password">Пароль</string>
     <string name="first_name">Имя</string>
@@ -14,4 +15,11 @@
     <string name="error_password">Не правильный пароль</string>
     <string name="error_required">Тут надо что-то вписать</string>
     <string name="make_order">Записаться</string>
+    <string name="menu">Меню</string>
+    <string name="Holder">Имя Фамилия</string>
+    <string name="logout">Выйти</string>
+    <string name="listOrder">Мои записи</string>
+    <string name="procedure">Процедура</string>
+    <string name="numberDefault">1</string>
+    <string name="id">id</string>
 </resources>

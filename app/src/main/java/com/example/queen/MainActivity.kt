@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.fragment.app.FragmentTransaction
 import com.example.queen.viewModel.UserViewModel
-import com.example.queen.view.FragmentLogin
+import com.example.queen.view.LoginFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var transaction: FragmentTransaction
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         if(savedInstanceState == null){
             userViewModel.initializeDB(applicationContext)
             transaction = supportFragmentManager.beginTransaction()
-            transaction.add(R.id.fragment_container_view, FragmentLogin.newInstance(),"loginFragment").commit()
+            transaction.add(R.id.fragment_container_view, LoginFragment.newInstance(),"loginFragment").commit()
         }
     }
 }
